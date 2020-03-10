@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Stop caching so the image will be different for each cat -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Cats!</title>
+</head>
+<body>
+
+  <div class="form-container">
+
+    <h1>Make cats!</h1>
+
+    <form action="" id="form">
+
+      <div class="form-control">
+        <label for="catName">Cat name</label>
+        <input 
+          type="text" 
+          id="catName"
+          name="catName"
+          autocomplete="off"
+          placeholder="Enter a cat name">
+      </div>
+
+      <div class="form-control">
+        <label for="age">Age of cat</label>
+        <input 
+          type="number" 
+          id="age"
+          name="age"
+          placeholder="Age">
+      </div>
+
+      <button 
+        class="button"
+        type="submit">
+        Create Cat
+      </button>
+    </form>
+  </div>
+
+  <div class="cats-container" id="cats">
+    
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
